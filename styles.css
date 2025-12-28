@@ -130,6 +130,8 @@ h3 {
 
 .logo-icon {
     font-size: 32px;
+    color: var(--primary);
+    vertical-align: middle;
 }
 
 .logo-text {
@@ -307,6 +309,7 @@ h3 {
 
 .card-icon {
     font-size: 32px;
+    color: var(--primary);
 }
 
 .card-title {
@@ -357,6 +360,8 @@ h3 {
 .feature-icon {
     font-size: 48px;
     margin-bottom: 16px;
+    color: var(--primary);
+    display: block;
 }
 
 .feature-card h3 {
@@ -517,6 +522,8 @@ h3 {
 .doctor-icon {
     font-size: 48px;
     margin-bottom: 16px;
+    color: var(--primary);
+    display: block;
 }
 
 .doctor-benefit h3 {
@@ -711,6 +718,14 @@ h3 {
     padding-top: 24px;
     text-align: center;
     color: var(--gray);
+}
+
+.version-info {
+    font-size: 0.75rem;
+    color: var(--gray);
+    opacity: 0.6;
+    margin-top: 8px;
+    font-family: 'Courier New', monospace;
 }
 
 /* Responsive Design */
