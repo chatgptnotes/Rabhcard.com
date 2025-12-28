@@ -809,6 +809,88 @@ h3 {
     color: var(--gray);
 }
 
+/* Partners Section */
+.partners {
+    padding: 120px 0;
+    background: var(--gray-lighter);
+    position: relative;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.partner-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    padding: 32px 24px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    text-align: center;
+    text-decoration: none;
+    color: var(--dark);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.partner-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.partner-card:hover::before {
+    opacity: 0.05;
+}
+
+.partner-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-2xl);
+    border-color: var(--primary-light);
+}
+
+.partner-icon {
+    font-size: 48px;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.4s ease;
+}
+
+.partner-card:hover .partner-icon {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.partner-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--dark);
+}
+
+.partner-card p {
+    font-size: 0.875rem;
+    color: var(--gray);
+    margin: 0;
+    line-height: 1.5;
+}
+
 /* CTA Section */
 .cta-section {
     padding: 120px 0;
@@ -868,7 +950,7 @@ h3 {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     gap: 48px;
     margin-bottom: 48px;
 }
@@ -967,6 +1049,10 @@ h3 {
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .partners-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1023,6 +1109,11 @@ h3 {
         grid-template-columns: 1fr;
     }
 
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
     .section-header {
         margin-bottom: 40px;
     }
@@ -1044,6 +1135,10 @@ h3 {
 
     .hero-image {
         display: none;
+    }
+
+    .partners-grid {
+        grid-template-columns: 1fr;
     }
 
     .pricing-card {
