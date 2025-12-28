@@ -2,6 +2,41 @@
 
 All notable changes to RABH Clinics will be documented in this file.
 
+## [2.3.0] - 2025-12-28
+
+### Changed
+- Updated geographic scope from Nagpur to India-wide
+- Hero description: India's first AI-assisted clinic network
+- CTA messaging: Families across India
+- Footer: Transforming healthcare in India
+- Meta description updated for national positioning
+
+### Fixed
+- Removed M-dash in hero description
+
+## [2.2.0] - 2025-12-28
+
+### Added
+- Modern gradient color system with mesh backgrounds
+- Glassmorphism effects throughout the site
+- Animated gradient orbs and patterns
+- Enhanced shadow system with colored shadows
+- Smooth scroll reveal animations
+- 3D button hover effects
+- Rotating gradient in CTA section
+
+### Changed
+- Complete visual redesign with contemporary aesthetics
+- Enhanced all card components with glassmorphic styling
+- Improved typography with better hierarchy
+- Modernized spacing and padding
+- Updated all transitions to cubic-bezier curves
+- Material Icons now use gradient fills
+
+### Removed
+- Footer contact section (address, email, phone)
+- Duplicate intersection observer code
+
 ## [2.1.0] - 2025-12-28
 
 ### Added
