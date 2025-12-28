@@ -2,6 +2,23 @@
 
 All notable changes to RABH Clinics will be documented in this file.
 
+## [2.5.0] - 2025-12-28
+
+### Changed
+- Complete brand color overhaul from purple/blue to red
+- Primary color: #ef4444 (red-500)
+- Primary dark: #dc2626 (red-600)
+- Primary light: #f87171 (red-400)
+- All gradients updated to red tones
+- Mesh backgrounds use red/amber hues
+- Button shadows now red-tinted
+- Hero pulsing orb changed to red
+- Feature icons with red gradients
+- Pricing cards with red highlights
+- Step numbers with red shadows
+- Partner cards with red accents
+- More energetic and healthcare-focused brand identity
+
 ## [2.4.0] - 2025-12-28
 
 ### Added
