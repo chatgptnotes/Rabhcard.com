@@ -1,6 +1,6 @@
-# RBAC Doctors Collective - Landing Page
+# RABH Clinics - Landing Page
 
-Modern, professional landing page for the RBAC Doctors Collective healthcare platform.
+Modern, professional landing page for RABH Clinics (Reliable Access to Better Health) healthcare platform.
 
 ## Features
 
@@ -223,14 +223,16 @@ Add to `<head>`:
 ## Support
 
 For technical issues or questions:
-- Email: tech@rbac.health
+- Email: tech@rabhclinics.com
+- General inquiries: hello@rabhclinics.com
 - Documentation: (link to full tech docs)
 
 ## License
 
-Proprietary - RBAC Doctors Collective
+Proprietary - RABH Clinics
 
 ---
 
-**Version**: 1.0.0
+**Version**: 2.0.0
 **Last Updated**: 2025-12-28
+**Branding**: RABH - Reliable Access to Better Health

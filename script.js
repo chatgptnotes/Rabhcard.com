@@ -247,8 +247,8 @@ if ('IntersectionObserver' in window) {
 
 // Console Easter egg for developers
 console.log('%c👋 Hey Developer!', 'color: #2563eb; font-size: 24px; font-weight: bold;');
-console.log('%cInterested in joining RBAC as a tech partner?', 'color: #64748b; font-size: 14px;');
-console.log('%cEmail us at: tech@rbac.health', 'color: #10b981; font-size: 14px;');
+console.log('%cInterested in joining RABH Clinics as a tech partner?', 'color: #64748b; font-size: 14px;');
+console.log('%cEmail us at: tech@rabhclinics.com', 'color: #10b981; font-size: 14px;');
 
 // Performance monitoring (basic)
 window.addEventListener('load', () => {
