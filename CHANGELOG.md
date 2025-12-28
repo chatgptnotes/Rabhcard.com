@@ -2,6 +2,24 @@
 
 All notable changes to RABH Clinics will be documented in this file.
 
+## [2.4.0] - 2025-12-28
+
+### Added
+- Network Partners section with 5 partner organizations
+- Partner cards with Material Icons and hover effects
+- Links to Betser.com and EmergencySeva.ai
+- Partners footer section with navigation links
+- Organizations showcased:
+  - Betser (Healthcare Technology Solutions)
+  - Ayushman Polyclinic (Primary Care)
+  - Ayushman Hospital (Multi-Specialty)
+  - Hope Hospital (Comprehensive Care)
+  - Rafttar Emergency Seva (24/7 Emergency)
+
+### Changed
+- Footer grid updated to accommodate partners section
+- Responsive layout for partner cards (5 > 3 > 2 > 1)
+
 ## [2.3.0] - 2025-12-28
 
 ### Changed
