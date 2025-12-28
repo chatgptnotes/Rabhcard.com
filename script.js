@@ -52,38 +52,51 @@ let lastScroll = 0;
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
-    if (currentScroll > 100) {
-        navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+    if (currentScroll > 50) {
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.boxShadow = 'none';
+        navbar.classList.remove('scrolled');
     }
 
     lastScroll = currentScroll;
 });
 
-// Intersection Observer for fade-in animations
+// Add smooth reveal animations
 const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
+    rootMargin: '0px 0px -50px 0px'
 };
 
-const observer = new IntersectionObserver((entries) => {
+const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('revealed');
         }
     });
 }, observerOptions);
 
-// Add fade-in effect to sections
-const sections = document.querySelectorAll('.feature-card, .pricing-card, .doctor-benefit, .step, .testimonial');
-sections.forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(20px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(section);
+// Observe all animated elements
+document.querySelectorAll('.feature-card, .pricing-card, .doctor-benefit, .step, .testimonial, .hero-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    revealObserver.observe(el);
 });
+
+// Add CSS for reveal animation
+const revealStyle = document.createElement('style');
+revealStyle.textContent = `
+    .revealed {
+        animation: revealUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards !important;
+    }
+
+    @keyframes revealUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+`;
+document.head.appendChild(revealStyle);
 
 // CTA Button interactions
 const ctaButtons = document.querySelectorAll('.btn-primary');
